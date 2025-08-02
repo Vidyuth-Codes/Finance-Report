@@ -5,6 +5,21 @@ const downloadBtn = document.getElementById('download-btn');
 let elementCounter = 0; // Universal counter for unique IDs
 
 // --- TEMPLATE DATA ---
+const Project_Cost ={
+    sheetName: 'Project Cost',
+    tables: [
+        {
+            tableName: 'Project Cost',
+            columns: [
+                {name: 'S.No'},
+                {name: 'Item'},
+                {name: 'From'},
+                {name: 'Percentage'},
+                {name: 'Rs'}
+                ]
+        }
+    ]
+}
 const SSA_TEMPLATE = {
     sheetName: 'SS-A',
     tables: [
@@ -641,4 +656,5 @@ downloadBtn.addEventListener('click', async () => {
 });
 
 // --- INITIAL LOAD ---
+
 loadInitialTemplates(); 
